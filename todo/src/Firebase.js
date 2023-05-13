@@ -3,13 +3,13 @@ import {getAuth} from 'firebase/auth'
 import { getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCca-ZZzn_wGJdsmTsPLObIYPeMYQr343g",
-    authDomain: "drive-ed83e.firebaseapp.com",
-    projectId: "drive-ed83e",
-    storageBucket: "drive-ed83e.appspot.com",
-    messagingSenderId: "344399258326",
-    appId: "1:344399258326:web:930ebb98584bb115bf1f77",
-    measurementId: "G-XMFLSWX4Z6"
+    apiKey:import.meta.env.VITE_API_KEY,
+    authDomain:import.meta.env.VITE_AUTH_DOMAIN  ,
+    projectId: import.meta.env.VITE_PROJECT_ID ,
+    storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_APP_ID ,
+    measurementId:import.meta.env.VITE_MEASUREMENT_ID
   };
 
 // initialise firebase and references to auth
