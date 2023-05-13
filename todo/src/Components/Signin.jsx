@@ -11,7 +11,7 @@ export default function Signin() {
       e.preventDefault()
       try{
          await signin(email,password)
-         Navigate('/account')
+         Navigate('/todo')
       }
       catch (e){
         console.log(e.message)
